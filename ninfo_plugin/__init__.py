@@ -20,5 +20,5 @@ class NinfoPluginTemplate(Template):
     vars = vars
 
     def pre(self, command, output_dir, vars):
-        vars['plugin'] = vars['package'].replace("ninfo-plugin-", "")
+        vars['plugin'] = vars['package'].replace("-","").replace("ninfoplugin", "")
         vars['project_dir'] = vars['project'].replace("-","_")

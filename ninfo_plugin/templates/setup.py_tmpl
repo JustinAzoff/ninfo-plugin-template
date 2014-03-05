@@ -19,7 +19,7 @@ setup(name=${repr(project)},
     ],
     entry_points = {
         'ninfo.plugin': [
-            '${project}    =   ${project_dir}'
+            '${plugin}    =   ${project_dir}'
         ]
     }
 ) 
