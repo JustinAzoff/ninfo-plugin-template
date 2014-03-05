@@ -1,7 +1,7 @@
 from ninfo import PluginBase
 
 class ${plugin}_plug(PluginBase):
-    """${description}"""
+    """${long_description}"""
     name          = ${repr(plugin)}
     title         = ${repr(plugin.title())}
     description   = ${repr(description)}
