@@ -1,1 +1,1 @@
-recursive-include {{package}} *.mako
+recursive-include ${package} *.mako

@@ -1,16 +1,16 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = {{repr(version or "0.0")}}
+version = ${repr(version or "0.0")}
 
-setup(name={{repr(project)}},
+setup(name=${repr(project)},
     version=version,
-    description="{{description or ''}}",
-    keywords={{repr(keywords or '')}},
-    author={{repr(author or '')}},
-    author_email={{repr(author_email or '')}},
-    url={{repr(url or '')}},
-    license={{repr(license_name or '')}},
+    description="${description or ''}",
+    keywords=${repr(keywords or '')},
+    author=${repr(author or '')},
+    author_email=${repr(author_email or '')},
+    url=${repr(url or '')},
+    license=${repr(license_name or '')},
     zip_safe=False,
     packages = find_packages(exclude=["tests"]),
     include_package_data=True,
@@ -19,7 +19,7 @@ setup(name={{repr(project)}},
     ],
     entry_points = {
         'ninfo.plugin': [
-            '{{project}}    =   {{package}}'
+            '${project}    =   ${project_dir}'
         ]
     }
 ) 

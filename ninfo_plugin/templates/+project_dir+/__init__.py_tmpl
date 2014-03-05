@@ -1,10 +1,10 @@
 from ninfo import PluginBase
 
-class {{project}}_plug(PluginBase):
-    """{{description}}"""
-    name          = {{repr(project}}
-    title         = {{repr(project.title())}}
-    description   = {{repr(description)}}
+class ${plugin}_plug(PluginBase):
+    """${description}"""
+    name          = ${repr(plugin)}
+    title         = ${repr(plugin.title())}
+    description   = ${repr(description)}
     cache_timeout = 60*60
     types         = ['ip','ip6','cidr', 'cidr6', 'hostname','username']
     #local        = False
@@ -16,4 +16,4 @@ class {{project}}_plug(PluginBase):
     def get_info(self, arg):
         return {}
 
-plugin_class = {{project}}_plug
+plugin_class = ${plugin}_plug
