@@ -8,7 +8,7 @@ class ${plugin}_plug(PluginBase):
     cache_timeout = 60*60
     types         = ['ip','ip6','cidr', 'cidr6', 'hostname','username','hash']
     #local        = False
-    #remove       = False
+    #remote       = False
 
     def setup(self):
         pass
