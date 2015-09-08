@@ -1,0 +1,2 @@
+recursive-include ninfo_plugin *.mako
+recursive-include ninfo_plugin *_tmpl
