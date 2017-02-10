@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(name='ninfo-plugin-template',
     description="PasteScript template to create ninfo plugins",
-    version='0.2.0',
+    version='0.3.0',
     zip_safe=False,
     packages = find_packages(exclude=["tests"]),
     include_package_data=True,
